@@ -1,0 +1,7 @@
+langchain
+langchain-community
+crewai
+crewai-tools
+pypdf
+docx2txt
+python-dotenv
