@@ -38,27 +38,6 @@ Built using **CrewAI**'s multi-agent system with the following agents and tasks:
 
 ---
 
-## 🗂️ File Structure
-
-literature-review-agent/
-├── agents/
-│ ├── review_agent.py
-│ └── summarizer_agent.py
-├── tasks/
-│ ├── read_paper_task.py
-│ └── summarize_task.py
-├── tools/
-│ └── docloader_tool.py
-├── docs/ # Stores user-uploaded input files
-├── report.txt # Final generated output
-├── crew.py # Sets up the CrewAI agents + tasks
-├── main.py # Runs the full agent workflow
-├── requirements.txt
-└── README.md
-
-
----
-
 ## 🛠️ Installation
 
 ```bash
