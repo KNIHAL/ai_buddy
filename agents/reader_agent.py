@@ -1,9 +1,12 @@
-from crewai import Agent
+from crewai import Agent, LLM
 from crewai_tools import VisionTool
-from ai_core import Cloudllm
 from tools import DocloaderTool
-
 tools = [VisionTool(), DocloaderTool()]
+
+cloudllm = LLM(
+     model=os.getenv("GROQ_MODEL_NAME"),
+     api_key=os.getenv("GROQ_API_KEY")
+ )
 
 def readerAgent():
     return Agent(
@@ -16,6 +19,6 @@ def readerAgent():
         ),
         verbose=True,
         allow_delegation=False,
-        llm=Cloudllm(),
+        llm=cloudllm,
         tools=tools
     )

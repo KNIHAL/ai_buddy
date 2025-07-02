@@ -1,12 +1,16 @@
 import os
 from crewai import Agent
 from crewai_tools import SerperDevTool, FileWriteTool
-from ai_core import Cloudllm
 
 serper_tool = SerperDevTool(
     api_key=os.getenv("SERPER_API_KEY")
 )
 file_write=FileWriteTool()
+
+cloudllm = LLM(
+     model=os.getenv("GROQ_MODEL_NAME"),
+     api_key=os.getenv("GROQ_API_KEY")
+ )
 
 def summarizerAgent():
     return Agent(
