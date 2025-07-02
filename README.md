@@ -69,7 +69,7 @@ cd literature-review-agent
 ```bash
 pip install -r requirements.txt
 ```
-### Add env
+### Create .env file and Add
 SERPER_API_KEY=your key.
 GROQ_API_KEY=your key.
 GROQ_MODEL=your groq model.

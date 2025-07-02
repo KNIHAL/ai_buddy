@@ -1,6 +1,6 @@
 from crewai import Agent
 from crewai_tools import VisionTool
-from llms import Cloudllm
+from ai_core import Cloudllm
 from tools import DocloaderTool
 
 tools = [VisionTool(), DocloaderTool()]

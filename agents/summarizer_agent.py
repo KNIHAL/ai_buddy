@@ -1,7 +1,7 @@
 import os
 from crewai import Agent
 from crewai_tools import SerperDevTool, FileWriteTool
-from llms import Cloudllm
+from ai_core import Cloudllm
 
 serper_tool = SerperDevTool(
     api_key=os.getenv("SERPER_API_KEY")
